@@ -23,12 +23,14 @@
 			cursor: pointer;
 		}
 		.search{
-			height: 20px;
+			height: 30px;
 			margin-right: 15%;
 			margin-left: 2%;
-			width: 150px;
+			width: 200px;
 			margin-bottom: 10px;
-
+			font-size: 3em;
+			background-image: url(images/search.png);
+			background-repeat: no-repeat;
 		}
 		div .icons{
 			color: white
@@ -45,6 +47,7 @@
 			color: black;
 
 		}
+
 		#pr{
 			color: #ff9900;
 		}
@@ -62,19 +65,85 @@
 			border-style: ridge;
 			margin-top: 10px;
 		}
-		@media screen and (max-width: 600px){
+ 		#foot{
+ 			display: none;
+ 			height: 50px;
+
+ 		}
+ 		.icons1 img{
+ 			height: 20px;
+			margin-top: 10px;
+			margin-left: 25px;
+			position: relative;
+ 		}
+ 		.icons1{
+			display: inline-block;
+			cursor: pointer;
+		}
+ 		.icons2 img{
+			margin-left: 120px;
+			position: relative;
+
+ 		}
+ 		.icons2{
+			display: inline-block;
+			cursor: pointer;
+		}
+		.msg img{
+			display: none;
+		}
+		hr{
+				display: none;
+			}
+		@media screen and (max-width: 846px){
+			.icons img{
+				color: black;
+				margin-bottom: 0px;
+				display: none;
+			}
+			.icons p{
+			margin-top: 2px;
+			margin-right: 33px;
+			color: none;
+			display: none;
+			}
+			.search{
+				width: 50%;
+				height: 30px;
+			}
+			#foot{
+				display: block;
+				height: 0px;
+				background-color: yellow;
+			}
+			hr{
+				display: block;
+			}
 			.pos{
+				height:540px;
+				margin-left: 0px;
+				width:100%;
+				border: 2px;
+				border-style: ridge;
+				margin-top: 10px;
+
+			}
+			#sk{
+				height: 280px;
 				width: 100%;
-				height:530px;
-				margin-left:0px;
+			}
+			.msg img{
+			display: block;
 			}
 		}
+		
 	</style>
 </head>
 <body>
 	<div id="heade">
 		<img class="h" src="linkedin.jpg">
-		<input class="search" type="text" name="search" placeholder="search">
+		<input class="search" type="text" name="search">
+		<div class="msg" style="display: inline-block;float: right;margin-right: 30px;margin-top: 20px;"><img src="images/message (1).png"></div>
 		<a><div class="icons"><img src="images/home-run.png"><p class="p">Home</p></div></a>
 		<div class="icons"><img src="images/microsoft (1).png"><p class="p">My Network</p></div>
 		<div class="icons"><img src="images/work (1).png"><p class="p">Work</p></div>
@@ -82,7 +151,9 @@
 		<div class="icons"><img src="images/notification.png"><p class="p">Notification</p></div>
 		<div class="icons"><img src="images/user.png"><p class="p">Me</p></div>
 		<div class="icons"><img src="images/menu.png"><p class="p">Work</p></div>
-		<div class="icons"><p id="pr">Try Premium free<br> for 1 Month</p></div>
+		<div class="icons"><p id="pr">Try Premium free <br>for 1 Month</p></div>
+	</div>
+	
 	</div>
 
 	<div class="pos">
@@ -93,12 +164,21 @@
 		<span style="margin-left: 5%;display: inline-block;"><b>Linkedin</b><br>12,117,203 followers<br>Promoted</span>
 		<a href="#" style="display: inline-block;color:#1a8cff;background-color: white;border: 0px;font-size: 20px;margin-left: 25%;"><b>+ Follow</b></a>
 		<p style="margin-left: 15px;">While many industries have been hit hard by COVID-19, some are on the rise. Here are ten roles that are in-demand today and the skills to help you land them:</p>
-		<img style="width: 100%;" src="images/rise.jpg">
-		<div style="border-style: ridge;margin-top: 6%; border-bottom: 0px;"></div>
-		<div class="icons"><img src="images/like.png"><a>Like</a></div>
-		<div class="icons"><img src="images/comment.png"><a>Comment</a></div>
-		<div class="icons"><img src="images/share.png"><a>Share</a></div>
-		<div class="icons"><img src="images/send.png"><a>Sent</a></div>
+		<img id="sk" style="width: 100%;" src="images/rise.jpg">
+		<div style="border-style: ridge;margin-top: 4%; border-bottom: 0px;"></div>
+		<div class="icons1"><img src="images/like.png"><a>Like</a></div>
+		<div class="icons1"><img src="images/comment.png"><a>Comment</a></div>
+		<div class="icons1"><img src="images/share.png"><a>Share</a></div>
+		<div class="icons1"><img src="images/send.png"><a>Sent</a></div>
+	</div>
+	<hr style="border: 1px solid black; margin-top: 0px;" />
+	<div id="foot">
+		<hr style="border: 1px solid black;" />
+		<div class="icons2"><img src="images/home.png"></div>
+		<div class="icons2"><img src="images/microsoft.png"></div>
+		<div class="icons2"><img src="images/plus (1).png"></div>
+		<div class="icons2"><img src="images/notification (3).png"></div>
+		<div class="icons2"><img src="images/work.png"></div>
 	</div>
 </body>
 </html>
